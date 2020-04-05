@@ -1,0 +1,180 @@
+body {
+margin:0;
+padding:0;
+
+font-family: sans-serif;
+}
+
+
+
+
+.header {
+position: fixed;
+width:100%;
+height:120px;
+top: 0px;
+left: 0px;
+background-color:#fff;
+z-index:9999;
+}
+
+.inf img{
+	position: fixed;
+	top:10px;
+	left:10px;
+	height:40px;
+	width:40px;
+	z-index:1;
+	
+}
+
+.wap {
+width: 100%;
+height: auto;
+left: 0;
+
+
+
+}
+
+
+.stroke {
+font: bold 3em Arial, sans-serif;
+color: #000;
+text-shadow: cad5e2 1px 1px 0, cad5e2 2px 2px 0, cad5e2 3px 3px 0, cad5e2 4px 4px 0, cad5e2 5px 5px 0;
+}
+
+
+.wrap {
+
+width: 100%;
+height: 100%;
+left: 0;
+top: 0px;
+background-color:#deddcd;
+display: flex;
+flex-wrap:wrap;
+justify-content: center;
+align-items: center;
+}
+
+h1
+{ font: bold 65px/60px Helvetica, Arial, Sans-serif;
+text-align: center;
+color: #eee; text-shadow: 0px 2px 6px #333; }
+
+h4
+{ font: bold 30px Helvetica, Arial, Sans-serif;
+text-align: center;
+color: #eee; text-shadow: 0px 2px 6px #333; }
+
+
+
+
+
+
+
+
+.card {
+width: 400px;
+height: 400px;
+position: relative;
+margin:10px;
+perspective: 1000px;
+margin-top: -10%;
+
+}
+.front, .back {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 1s;
+backface-visibility: hidden;
+border-radius: 10px;
+box-shadow: 10px 15px 18px 0px rgba(0,0,0,0.65);
+-webkit-box-shadow: 10px 15px 18px 0px rgba(0,0,0,0.65);
+-moz-box-shadow: 10px 15px 18px 0px rgba(0,0,0,0.65);
+
+}
+.front {
+background-color:#fff;
+
+
+
+}
+.back {
+background-color:#fff;
+transform: rotateY(180deg);
+}
+.card:hover .front {transform: rotateY(180deg);}
+.card:hover .back {transform: rotateY(360deg);}
+.foto {position: absolute;
+overflow:hidden;
+
+}
+.foto img {width: 70%;
+justify-content: center;
+align-items: center;
+margin-left:50px;
+
+display: flex;
+
+}
+.info{
+position: absolute;
+background-color: rgba(0,0,0,0.5);
+width:400px;
+height:150px;
+margin-top: 125px;
+border-radius: 0 0 10px 10px;
+overflow: hidden;
+z-index:1}
+
+
+.Modal {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background: rgba(0,0,0,0.7);
+
+}
+.Modal:target {
+    display: flex;
+    pointer-events: auto;
+} 
+.Modal_Body {
+    position: relative;
+	
+    z-index: 2;
+    display: block;
+    margin: auto;
+	width: 70%;
+    padding: 15px;
+    background:#696969;
+}
+.ModalFull {
+  position: absolute;
+
+  display: block;
+  z-index: 0;
+ 
+  width: 100%;
+  height: 100%;
+}
+
+.mod {line-height: normal;}
+H3 {
+  font: bold 25px Helvetica, Arial, Sans-serif;
+text-align: center;
+color: #eee; text-shadow: 0px 2px 6px #333; 
+  }
+  
